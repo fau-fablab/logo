@@ -1,0 +1,12 @@
+GIMP Palette
+Name: FAU Logo Palette
+Columns: 3
+#
+0    65 113     FAU blue
+0   148 108     NatFak green
+0   176 230     MedFak blue
+163 172 177     TechFak gray
+141  20  41     ReWi red
+179 134   4     PhilFak brown
+255 255 255     white
+  0   0   0     black
