@@ -22,3 +22,11 @@ Da der eine Teil vom FAU Logo geklaut ist, kann dieses Repo nicht öffentlich zu
   - wenn möglich weiß (#ffffff)
   - mit adäquatem Abstand
 - Wenn möglich SVG verwenden, ansonsten hochauflösende Pixelbilder
+
+## Vorgehen
+
+Erstelle eine SVG Zeichung eines Logos unter dem Namen `$name.svg`. Kopiere die Datei und mach einen weißen Hintergrund (weißes Rechteck) und nenne die Datei `$name_whitebg.svg`.
+
+## Makefile
+
+Es gibt ein Makefile um bei Bedarf aus allen SVG-Dateien PNG und PDF zu erzeugen.
