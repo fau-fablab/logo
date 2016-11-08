@@ -2,9 +2,11 @@ SVG		:= $(wildcard *.svg)
 PNG		:= $(SVG:%.svg=%.png)
 PDF		:= $(SVG:%.svg=%.pdf)
 
-.PHONY: all clean
+.PHONY: all clean png pdf
 
-all: $(WHITE_BG) $(PNG)
+all: $(PNG) $(PDF)
+png: $(PNG)
+pdf: $(PDF)
 
 $(PNG): $(SVG)
 	inkscape --export-png=$@ $<
