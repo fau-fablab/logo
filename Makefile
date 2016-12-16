@@ -8,13 +8,16 @@ all: $(PNG) $(PDF)
 png: $(PNG)
 pdf: $(PDF)
 
+%.png: %.svg
+%.png: %.svg
+
 $(PNG): $(SVG)
-	inkscape --export-png=$@ $<
-	# rsvg --format png $< > $@
+	inkscape --export-png=$@ $(@:%.png=%.svg)
+	@# rsvg --format png $< > $@
 
 $(PDF): $(SVG)
-	inkscape --export-pdf=$@ $<
-	# rsvg --format pdf $< > $@
+	inkscape --export-pdf=$@ $(@:%.pdf=%.svg)
+	@# rsvg --format pdf $< > $@
 
 clean:
 	rm -rf $(PNG) $(PDF)
