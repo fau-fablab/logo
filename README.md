@@ -29,4 +29,4 @@ Erstelle eine SVG Zeichung eines Logos unter dem Namen `$name.svg`. Kopiere die 
 
 ## Makefile
 
-Es gibt ein Makefile um bei Bedarf aus allen SVG-Dateien PNG und PDF zu erzeugen.
+Es gibt ein Makefile um bei Bedarf aus allen SVG-Dateien PNG und PDF zu erzeugen und die SVG-Dateien zu minifien.

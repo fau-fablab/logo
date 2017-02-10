@@ -2,20 +2,25 @@ SVG		:= $(wildcard *.svg)
 PNG		:= $(SVG:%.svg=%.png)
 PDF		:= $(SVG:%.svg=%.pdf)
 
-.PHONY: all clean png pdf
+.PHONY: all clean minify png pdf
 
-all: $(PNG) $(PDF)
+all: png pdf
+minify: $(SVG)
 png: $(PNG)
 pdf: $(PDF)
 
-%.png: %.svg
-%.png: %.svg
-
+$(SVG): $(SVG)
 $(PNG): $(SVG)
+$(PDF): $(SVG)
+
+%.svg: %.svg
+	@# minify
+	inkscape --export-plain-svg=$@ $@
+
+%.png: %.svg
 	inkscape --export-png=$@ $(@:%.png=%.svg)
 	@# rsvg --format png $< > $@
-
-$(PDF): $(SVG)
+%.pdf: %.svg
 	inkscape --export-pdf=$@ $(@:%.pdf=%.svg)
 	@# rsvg --format pdf $< > $@
 
