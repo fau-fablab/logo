@@ -1,6 +1,11 @@
 # Logo des FAU FabLabs
 
+![Logo](https://github.com/fau-fablab/logo/blob/master/Logo/Logo%20bunt.svg)
+
+[SVG](https://github.com/fau-fablab/logo/blob/master/Logo/Logo%20bunt.svg)
+
 ## Design Guide
+
 
 - FabCube:
   - rot muss oben sein
