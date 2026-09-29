@@ -3,3 +3,5 @@
 *.pdf
 # Ausnahme: fertiges PDF für LaTeX (fablab-document)
 !Logo/Logo.pdf
+!Logo/Logo-FAU-bunt.pdf
+!Logo/Logo-FAU-schwarz.pdf

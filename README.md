@@ -1,8 +1,12 @@
 # Logo des FAU FabLabs
 
-Für Dokumente, Einweisungen und Betriebsanweisungen: [`Logo/Logo.svg`](Logo/Logo.svg) bzw.
-[`Logo/Logo.pdf`](Logo/Logo.pdf), das Logo **ohne FAU-Schriftzug**. Es wird von
-[fablab-document](https://github.com/fau-fablab/fablab-document) als Untermodul eingebunden.
+Für Dokumente, Einweisungen und Betriebsanweisungen:
+
+- [`Logo/Logo.svg`](Logo/Logo.svg) bzw. [`Logo/Logo.pdf`](Logo/Logo.pdf): das Logo **ohne FAU-Schriftzug**
+- [`Logo/Logo bunt.svg`](Logo/Logo%20bunt.svg) bzw. [`Logo/Logo-FAU-bunt.pdf`](Logo/Logo-FAU-bunt.pdf): das Logo **mit FAU-Schriftzug**, bunt
+- [`Logo/Logo schwarz.svg`](Logo/Logo%20schwarz.svg) bzw. [`Logo/Logo-FAU-schwarz.pdf`](Logo/Logo-FAU-schwarz.pdf): das Logo **mit FAU-Schriftzug**, schwarz
+
+Das Repository wird von [fablab-document](https://github.com/fau-fablab/fablab-document) als Untermodul eingebunden.
 
 ![Logo](https://github.com/fau-fablab/logo/blob/master/Logo/Logo%20bunt.svg)
 
@@ -40,14 +44,17 @@ Es gibt ein Makefile um bei Bedarf aus allen SVG-Dateien PNG und PDF zu erzeugen
 
 ## Lizenz
 
-`Logo/Logo.svg` und `Logo/Logo.pdf` (Logo ohne FAU-Schriftzug) stehen unter
+`Logo/Logo.svg` und `Logo/Logo.pdf` (Logo ohne FAU-Schriftzug) sowie `Logo/Logo bunt.svg`,
+`Logo/Logo schwarz.svg`, `Logo/Logo-FAU-bunt.pdf` und `Logo/Logo-FAU-schwarz.pdf` (Logo mit
+FAU-Schriftzug) stehen unter
 [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), wie die Dokumente des FAU FabLab.
 
-Für die übrigen Dateien, insbesondere Varianten mit dem FAU-Schriftzug, gilt diese Lizenz nicht.
+Für die übrigen Dateien gilt diese Lizenz nicht.
 
-`Logo/Logo.pdf` wird aus `Logo/Logo.svg` erzeugt:
+Die PDFs werden aus den SVGs erzeugt:
 
 ```bash
 rsvg-convert -f pdf -o Logo/Logo.pdf Logo/Logo.svg
+rsvg-convert -f pdf -o Logo/Logo-FAU-bunt.pdf "Logo/Logo bunt.svg"
+rsvg-convert -f pdf -o Logo/Logo-FAU-schwarz.pdf "Logo/Logo schwarz.svg"
 ```
-
