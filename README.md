@@ -47,7 +47,7 @@ Es gibt ein Makefile um bei Bedarf aus allen SVG-Dateien PNG und PDF zu erzeugen
 `Logo/Logo.svg` und `Logo/Logo.pdf` (Logo ohne FAU-Schriftzug) sowie `Logo/Logo bunt.svg`,
 `Logo/Logo schwarz.svg`, `Logo/Logo-FAU-bunt.pdf` und `Logo/Logo-FAU-schwarz.pdf` (Logo mit
 FAU-Schriftzug) stehen unter
-[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), wie die Dokumente des FAU FabLab.
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), wie die Dokumente des FAU FabLab.
 
 Für die übrigen Dateien gilt diese Lizenz nicht.
 
